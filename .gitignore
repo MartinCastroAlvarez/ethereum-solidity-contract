@@ -1,0 +1,7 @@
+*swp
+*swc
+*swo
+
+data/
+node_modules/
+token.txt

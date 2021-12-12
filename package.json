@@ -1,0 +1,35 @@
+{
+  "name": "nisman",
+  "version": "1.0.0",
+  "description": "* Smart Contract running on the Etherum network using Solidity.",
+  "main": "index.js",
+  "scripts": {
+    "update": "node ./scripts/update.js",
+    "deploy": "node ./scripts/deploy.js",
+    "balance": "node ./scripts/balance.js",
+    "send": "node ./scripts/send.js",
+    "attach": "geth attach 'http://127.0.0.1:8545'",
+    "start": "geth --datadir './data' --rpcapi 'miner,admin,db,eth,we3,personal,net' --rpccorsdomain '*' --nodiscover --verbosity 6 --networkid '152389429837498234' --allow-insecure-unlock --rpc",
+    "test": "./node_modules/.bin/truffle test --debug --show-events --stacktrace-extra"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MartinCastroAlvarez/nisman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinCastroAlvarez/nisman/issues"
+  },
+  "homepage": "https://github.com/MartinCastroAlvarez/nisman#readme",
+  "dependencies": {
+    "solc": "^0.8.10",
+    "truffle": "^5.4.19",
+    "web3": "^1.6.1",
+    "web3-core-helpers": "^1.6.1",
+    "web3-eth": "^1.6.1",
+    "web3-eth-contract": "^1.6.1",
+    "web3-utils": "^1.6.1",
+    "web3js-quorum": "^21.7.0-rc1"
+  }
+}
